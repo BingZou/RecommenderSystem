@@ -1,0 +1,158 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.hadoop.security.authentication.util.KerberosUtil (file:/Users/BingZou/miniconda3/envs/py37/lib/python3.6/site-packages/pyspark/jars/hadoop-auth-2.7.3.jar) to method sun.security.krb5.Config.getInstance()
+WARNING: Please consider reporting this to the maintainers of org.apache.hadoop.security.authentication.util.KerberosUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2019-05-14 13:19:11 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-05-14 13:19:12 INFO  SparkContext:54 - Running Spark version 2.4.0
+2019-05-14 13:19:13 INFO  SparkContext:54 - Submitted application: main
+2019-05-14 13:19:13 INFO  SecurityManager:54 - Changing view acls to: BingZou
+2019-05-14 13:19:13 INFO  SecurityManager:54 - Changing modify acls to: BingZou
+2019-05-14 13:19:13 INFO  SecurityManager:54 - Changing view acls groups to: 
+2019-05-14 13:19:13 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2019-05-14 13:19:13 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(BingZou); groups with view permissions: Set(); users  with modify permissions: Set(BingZou); groups with modify permissions: Set()
+2019-05-14 13:19:13 INFO  Utils:54 - Successfully started service 'sparkDriver' on port 52622.
+2019-05-14 13:19:13 INFO  SparkEnv:54 - Registering MapOutputTracker
+2019-05-14 13:19:13 INFO  SparkEnv:54 - Registering BlockManagerMaster
+2019-05-14 13:19:13 INFO  BlockManagerMasterEndpoint:54 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2019-05-14 13:19:13 INFO  BlockManagerMasterEndpoint:54 - BlockManagerMasterEndpoint up
+2019-05-14 13:19:13 INFO  DiskBlockManager:54 - Created local directory at /private/var/folders/4d/vjc2thk92bbf1q7t370flp400000gn/T/blockmgr-0fa4aa0a-075e-42d1-b2ae-449fa74253ad
+2019-05-14 13:19:13 INFO  MemoryStore:54 - MemoryStore started with capacity 4.6 GB
+2019-05-14 13:19:13 INFO  SparkEnv:54 - Registering OutputCommitCoordinator
+2019-05-14 13:19:13 INFO  log:192 - Logging initialized @4157ms
+2019-05-14 13:19:13 INFO  Server:351 - jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+2019-05-14 13:19:13 INFO  Server:419 - Started @4247ms
+2019-05-14 13:19:13 INFO  AbstractConnector:278 - Started ServerConnector@2d04477d{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2019-05-14 13:19:13 INFO  Utils:54 - Successfully started service 'SparkUI' on port 4040.
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@70e02347{/jobs,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7db08d12{/jobs/json,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@20041b0a{/jobs/job,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@c5a3999{/jobs/job/json,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@75fbed1d{/stages,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@752764e3{/stages/json,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6e2751b7{/stages/stage,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@579bd4cb{/stages/stage/json,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3658d66{/stages/pool,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@51034af2{/stages/pool/json,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@65b905f7{/storage,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6c8db807{/storage/json,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@432c064d{/storage/rdd,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@8b39000{/storage/rdd/json,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2588ba5c{/environment,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@24c4636a{/environment/json,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@77907d1{/executors,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@13dea4ae{/executors/json,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7364b6d3{/executors/threadDump,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@743c54e6{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3bb4823f{/static,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2e9ed6a7{/,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@44cf77c0{/api,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@164e7351{/jobs/job/kill,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@26f15043{/stages/stage/kill,null,AVAILABLE,@Spark}
+2019-05-14 13:19:13 INFO  SparkUI:54 - Bound SparkUI to 0.0.0.0, and started at http://a-192-168-131-29.dynapool.vpn.nyu.edu:4040
+2019-05-14 13:19:13 INFO  Executor:54 - Starting executor ID driver on host localhost
+2019-05-14 13:19:14 INFO  Utils:54 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 52623.
+2019-05-14 13:19:14 INFO  NettyBlockTransferService:54 - Server created on a-192-168-131-29.dynapool.vpn.nyu.edu:52623
+2019-05-14 13:19:14 INFO  BlockManager:54 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2019-05-14 13:19:14 INFO  BlockManagerMaster:54 - Registering BlockManager BlockManagerId(driver, a-192-168-131-29.dynapool.vpn.nyu.edu, 52623, None)
+2019-05-14 13:19:14 INFO  BlockManagerMasterEndpoint:54 - Registering block manager a-192-168-131-29.dynapool.vpn.nyu.edu:52623 with 4.6 GB RAM, BlockManagerId(driver, a-192-168-131-29.dynapool.vpn.nyu.edu, 52623, None)
+2019-05-14 13:19:14 INFO  BlockManagerMaster:54 - Registered BlockManager BlockManagerId(driver, a-192-168-131-29.dynapool.vpn.nyu.edu, 52623, None)
+2019-05-14 13:19:14 INFO  BlockManager:54 - Initialized BlockManager: BlockManagerId(driver, a-192-168-131-29.dynapool.vpn.nyu.edu, 52623, None)
+2019-05-14 13:19:14 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5d50a0e1{/metrics/json,null,AVAILABLE,@Spark}
+2019-05-14 13:19:14 INFO  SharedState:54 - Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/Users/BingZou/Desktop/1004bigdata/final-project-bz/spark-warehouse').
+2019-05-14 13:19:14 INFO  SharedState:54 - Warehouse path is 'file:/Users/BingZou/Desktop/1004bigdata/final-project-bz/spark-warehouse'.
+2019-05-14 13:19:14 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@56d58e15{/SQL,null,AVAILABLE,@Spark}
+2019-05-14 13:19:14 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2e6589bc{/SQL/json,null,AVAILABLE,@Spark}
+2019-05-14 13:19:14 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@48ce1386{/SQL/execution,null,AVAILABLE,@Spark}
+2019-05-14 13:19:14 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@73e55081{/SQL/execution/json,null,AVAILABLE,@Spark}
+2019-05-14 13:19:14 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@58bfcb25{/static/sql,null,AVAILABLE,@Spark}
+2019-05-14 13:19:14 INFO  StateStoreCoordinatorRef:54 - Registered StateStoreCoordinator endpoint
+2019-05-14 13:19:16 INFO  SparkContext:54 - Starting job: parquet at NativeMethodAccessorImpl.java:0
+2019-05-14 13:19:16 INFO  DAGScheduler:54 - Got job 0 (parquet at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2019-05-14 13:19:16 INFO  DAGScheduler:54 - Final stage: ResultStage 0 (parquet at NativeMethodAccessorImpl.java:0)
+2019-05-14 13:19:16 INFO  DAGScheduler:54 - Parents of final stage: List()
+2019-05-14 13:19:16 INFO  DAGScheduler:54 - Missing parents: List()
+2019-05-14 13:19:16 INFO  DAGScheduler:54 - Submitting ResultStage 0 (MapPartitionsRDD[1] at parquet at NativeMethodAccessorImpl.java:0), which has no missing parents
+2019-05-14 13:19:16 INFO  MemoryStore:54 - Block broadcast_0 stored as values in memory (estimated size 70.3 KB, free 4.6 GB)
+2019-05-14 13:19:16 INFO  MemoryStore:54 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 25.3 KB, free 4.6 GB)
+2019-05-14 13:19:16 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on a-192-168-131-29.dynapool.vpn.nyu.edu:52623 (size: 25.3 KB, free: 4.6 GB)
+2019-05-14 13:19:16 INFO  SparkContext:54 - Created broadcast 0 from broadcast at DAGScheduler.scala:1161
+2019-05-14 13:19:16 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at parquet at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2019-05-14 13:19:16 INFO  TaskSchedulerImpl:54 - Adding task set 0.0 with 1 tasks
+2019-05-14 13:19:16 INFO  TaskSetManager:54 - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 8118 bytes)
+2019-05-14 13:19:16 INFO  Executor:54 - Running task 0.0 in stage 0.0 (TID 0)
+2019-05-14 13:19:17 INFO  MemoryStore:54 - Block taskresult_0 stored as bytes in memory (estimated size 19.4 MB, free 4.6 GB)
+2019-05-14 13:19:17 INFO  BlockManagerInfo:54 - Added taskresult_0 in memory on a-192-168-131-29.dynapool.vpn.nyu.edu:52623 (size: 19.4 MB, free: 4.6 GB)
+2019-05-14 13:19:18 INFO  Executor:54 - Finished task 0.0 in stage 0.0 (TID 0). 20317993 bytes result sent via BlockManager)
+2019-05-14 13:19:18 INFO  TransportClientFactory:267 - Successfully created connection to a-192-168-131-29.dynapool.vpn.nyu.edu/192.168.131.29:52623 after 49 ms (0 ms spent in bootstraps)
+2019-05-14 13:19:18 INFO  TaskSetManager:54 - Finished task 0.0 in stage 0.0 (TID 0) in 2342 ms on localhost (executor driver) (1/1)
+2019-05-14 13:19:18 INFO  BlockManagerInfo:54 - Removed taskresult_0 on a-192-168-131-29.dynapool.vpn.nyu.edu:52623 in memory (size: 19.4 MB, free: 4.6 GB)
+2019-05-14 13:19:18 INFO  TaskSchedulerImpl:54 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2019-05-14 13:19:18 INFO  DAGScheduler:54 - ResultStage 0 (parquet at NativeMethodAccessorImpl.java:0) finished in 2.560 s
+2019-05-14 13:19:18 INFO  DAGScheduler:54 - Job 0 finished: parquet at NativeMethodAccessorImpl.java:0, took 2.644113 s
+2019-05-14 13:19:20 INFO  MemoryStore:54 - Block broadcast_1 stored as values in memory (estimated size 121.4 KB, free 4.6 GB)
+2019-05-14 13:19:20 INFO  MemoryStore:54 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 23.0 KB, free 4.6 GB)
+2019-05-14 13:19:20 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on a-192-168-131-29.dynapool.vpn.nyu.edu:52623 (size: 23.0 KB, free: 4.6 GB)
+2019-05-14 13:19:20 INFO  SparkContext:54 - Created broadcast 1 from textFile at ReadWrite.scala:615
+Traceback (most recent call last):
+  File "/Users/BingZou/Desktop/1004bigdata/final-project-bz/Tester.py", line 74, in <module>
+    results.append(Tester(spark,df_test,rank,regParam,alpha, K = 500))
+  File "/Users/BingZou/Desktop/1004bigdata/final-project-bz/Tester.py", line 16, in Tester
+    model = ALSModel.load('ALSModel_%s_%s__%s' %(str(rank),str(regParam),str(alpha)))
+  File "/Users/BingZou/miniconda3/envs/py37/lib/python3.6/site-packages/pyspark/python/lib/pyspark.zip/pyspark/ml/util.py", line 362, in load
+  File "/Users/BingZou/miniconda3/envs/py37/lib/python3.6/site-packages/pyspark/python/lib/pyspark.zip/pyspark/ml/util.py", line 300, in load
+  File "/Users/BingZou/miniconda3/envs/py37/lib/python3.6/site-packages/pyspark/python/lib/py4j-0.10.7-src.zip/py4j/java_gateway.py", line 1257, in __call__
+  File "/Users/BingZou/miniconda3/envs/py37/lib/python3.6/site-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/utils.py", line 63, in deco
+  File "/Users/BingZou/miniconda3/envs/py37/lib/python3.6/site-packages/pyspark/python/lib/py4j-0.10.7-src.zip/py4j/protocol.py", line 328, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling o32.load.
+: org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: file:/Users/BingZou/Desktop/1004bigdata/final-project-bz/ALSModel_150_0.5__50/metadata
+	at org.apache.hadoop.mapred.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:287)
+	at org.apache.hadoop.mapred.FileInputFormat.listStatus(FileInputFormat.java:229)
+	at org.apache.hadoop.mapred.FileInputFormat.getSplits(FileInputFormat.java:315)
+	at org.apache.spark.rdd.HadoopRDD.getPartitions(HadoopRDD.scala:204)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:253)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:251)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:251)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:253)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:251)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:251)
+	at org.apache.spark.rdd.RDD$$anonfun$take$1.apply(RDD.scala:1343)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:363)
+	at org.apache.spark.rdd.RDD.take(RDD.scala:1337)
+	at org.apache.spark.rdd.RDD$$anonfun$first$1.apply(RDD.scala:1378)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:363)
+	at org.apache.spark.rdd.RDD.first(RDD.scala:1377)
+	at org.apache.spark.ml.util.DefaultParamsReader$.loadMetadata(ReadWrite.scala:615)
+	at org.apache.spark.ml.recommendation.ALSModel$ALSModelReader.load(ALS.scala:523)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:238)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+2019-05-14 13:19:20 INFO  SparkContext:54 - Invoking stop() from shutdown hook
+2019-05-14 13:19:20 INFO  AbstractConnector:318 - Stopped Spark@2d04477d{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2019-05-14 13:19:20 INFO  SparkUI:54 - Stopped Spark web UI at http://a-192-168-131-29.dynapool.vpn.nyu.edu:4040
+2019-05-14 13:19:20 INFO  MapOutputTrackerMasterEndpoint:54 - MapOutputTrackerMasterEndpoint stopped!
+2019-05-14 13:19:20 INFO  MemoryStore:54 - MemoryStore cleared
+2019-05-14 13:19:20 INFO  BlockManager:54 - BlockManager stopped
+2019-05-14 13:19:20 INFO  BlockManagerMaster:54 - BlockManagerMaster stopped
+2019-05-14 13:19:20 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54 - OutputCommitCoordinator stopped!
+2019-05-14 13:19:20 INFO  SparkContext:54 - Successfully stopped SparkContext
+2019-05-14 13:19:20 INFO  ShutdownHookManager:54 - Shutdown hook called
+2019-05-14 13:19:20 INFO  ShutdownHookManager:54 - Deleting directory /private/var/folders/4d/vjc2thk92bbf1q7t370flp400000gn/T/spark-a0e62799-767a-44d1-818b-cc8efe048463
+2019-05-14 13:19:20 INFO  ShutdownHookManager:54 - Deleting directory /private/var/folders/4d/vjc2thk92bbf1q7t370flp400000gn/T/spark-d6336098-137a-4575-9330-88d07f5efad3/pyspark-4cc16e95-cd5f-4ec4-8679-1ae24a90e9ea
+2019-05-14 13:19:20 INFO  ShutdownHookManager:54 - Deleting directory /private/var/folders/4d/vjc2thk92bbf1q7t370flp400000gn/T/spark-d6336098-137a-4575-9330-88d07f5efad3

@@ -1,0 +1,389 @@
+19/04/30 15:49:30 ERROR Utils: Uncaught exception in thread Thread-1
+org.apache.spark.rpc.RpcTimeoutException: Futures timed out after [120 seconds]. This timeout is controlled by spark.rpc.askTimeout
+	at org.apache.spark.rpc.RpcTimeout.org$apache$spark$rpc$RpcTimeout$$createRpcTimeoutException(RpcTimeout.scala:47)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:62)
+	at org.apache.spark.rpc.RpcTimeout$$anonfun$addMessageIfTimeout$1.applyOrElse(RpcTimeout.scala:58)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:36)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:76)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend.requestTotalExecutors(CoarseGrainedSchedulerBackend.scala:574)
+	at org.apache.spark.scheduler.cluster.YarnSchedulerBackend.stop(YarnSchedulerBackend.scala:98)
+	at org.apache.spark.scheduler.cluster.YarnClientSchedulerBackend.stop(YarnClientSchedulerBackend.scala:164)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.stop(TaskSchedulerImpl.scala:581)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:2040)
+	at org.apache.spark.SparkContext$$anonfun$stop$6.apply$mcV$sp(SparkContext.scala:1949)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1340)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1948)
+	at org.apache.spark.SparkContext$$anonfun$2.apply$mcV$sp(SparkContext.scala:575)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:216)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1945)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply$mcV$sp(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
+	at scala.util.Try$.apply(Try.scala:192)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:54)
+Caused by: java.util.concurrent.TimeoutException: Futures timed out after [120 seconds]
+	at scala.concurrent.impl.Promise$DefaultPromise.ready(Promise.scala:223)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:227)
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:220)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	... 21 more
+19/04/30 15:50:30 WARN Client: Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+19/04/30 15:51:31 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+19/04/30 15:51:31 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+rank = 1regParam = 0.01alpha = 1, RMSE = 10.028
+rank = 1regParam = 0.01alpha = 2, RMSE = 10.023
+rank = 1regParam = 0.01alpha = 3, RMSE = 10.02
+rank = 1regParam = 0.01alpha = 4, RMSE = 10.017
+rank = 1regParam = 0.01alpha = 5, RMSE = 10.014
+rank = 1regParam = 0.01alpha = 10, RMSE = 10.005
+rank = 1regParam = 0.01alpha = 15, RMSE = 9.998
+rank = 1regParam = 0.01alpha = 20, RMSE = 9.992
+rank = 1regParam = 0.1alpha = 1, RMSE = 10.028
+rank = 1regParam = 0.1alpha = 2, RMSE = 10.023
+rank = 1regParam = 0.1alpha = 3, RMSE = 10.02
+rank = 1regParam = 0.1alpha = 4, RMSE = 10.017
+rank = 1regParam = 0.1alpha = 5, RMSE = 10.014
+rank = 1regParam = 0.1alpha = 10, RMSE = 10.005
+rank = 1regParam = 0.1alpha = 15, RMSE = 9.998
+rank = 1regParam = 0.1alpha = 20, RMSE = 9.993
+rank = 1regParam = 1alpha = 1, RMSE = 10.029
+rank = 1regParam = 1alpha = 2, RMSE = 10.024
+rank = 1regParam = 1alpha = 3, RMSE = 10.02
+rank = 1regParam = 1alpha = 4, RMSE = 10.017
+rank = 1regParam = 1alpha = 5, RMSE = 10.014
+rank = 1regParam = 1alpha = 10, RMSE = 10.005
+rank = 1regParam = 1alpha = 15, RMSE = 9.999
+rank = 1regParam = 1alpha = 20, RMSE = 9.993
+rank = 1regParam = 10alpha = 1, RMSE = 10.037
+rank = 1regParam = 10alpha = 2, RMSE = 10.037
+rank = 1regParam = 10alpha = 3, RMSE = 10.037
+rank = 1regParam = 10alpha = 4, RMSE = 10.028
+rank = 1regParam = 10alpha = 5, RMSE = 10.023
+rank = 1regParam = 10alpha = 10, RMSE = 10.011
+rank = 1regParam = 10alpha = 15, RMSE = 10.003
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4137_4 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7509_7 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7245_2 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8022_2 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7504_3 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7509_8 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4137_9 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7245_4 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8027_1 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7768_5 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7245_3 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7250_1 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7509_0 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4142_7 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7245_5 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4137_1 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7250_0 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8027_2 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8022_8 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8281_6 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7768_7 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7763_6 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8022_0 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8027_9 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8286_8 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8027_4 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7768_1 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7509_2 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8286_3 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4142_8 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7504_7 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7250_8 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7504_8 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7245_1 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4137_3 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7245_0 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7768_9 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8281_8 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8281_1 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7509_5 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7763_0 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8027_0 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8022_4 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4137_2 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8281_0 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7768_8 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7768_6 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7768_3 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7509_3 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7768_2 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8286_4 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7250_9 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8022_1 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8286_2 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4142_9 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7250_4 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7504_4 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8027_7 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4137_5 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7245_6 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8022_7 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4142_1 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7763_4 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8281_2 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7509_4 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8027_3 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7250_7 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4142_6 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7245_7 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8022_3 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8286_1 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4142_3 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8281_3 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7250_3 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7250_6 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8286_0 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8286_6 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8286_7 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8022_9 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4137_6 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8022_5 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4142_5 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7504_6 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7504_9 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4142_2 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7250_2 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7763_7 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7763_5 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7763_8 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7763_3 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7504_1 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7250_5 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8286_9 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7245_8 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8027_5 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4137_8 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7768_0 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7763_1 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8027_8 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7504_0 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4142_4 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4137_7 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8286_5 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7763_2 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8281_7 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4142_0 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7509_1 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7509_9 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8022_6 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7504_2 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7245_9 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_4137_0 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8281_5 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8281_4 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7509_6 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7768_4 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8281_9 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7763_9 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_8027_6 !
+19/04/30 17:58:33 WARN BlockManagerMasterEndpoint: No more replicas available for rdd_7504_5 !
+19/04/30 17:58:33 WARN YarnSchedulerBackend$YarnSchedulerEndpoint: Requesting driver to remove executor 2 for reason Container killed by YARN for exceeding memory limits.  2.5 GB of 2.5 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+19/04/30 17:58:33 ERROR YarnScheduler: Lost executor 2 on compute-2-4.local: Container killed by YARN for exceeding memory limits.  2.5 GB of 2.5 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+19/04/30 17:58:33 WARN TaskSetManager: Lost task 59.0 in stage 11973.0 (TID 28371, compute-2-4.local, executor 2): ExecutorLostFailure (executor 2 exited caused by one of the running tasks) Reason: Container killed by YARN for exceeding memory limits.  2.5 GB of 2.5 GB physical memory used. Consider boosting spark.yarn.executor.memoryOverhead or disabling yarn.nodemanager.vmem-check-enabled because of YARN-4714.
+rank = 1regParam = 10alpha = 20, RMSE = 9.997
+rank = 5regParam = 0.01alpha = 1, RMSE = 10.023
+rank = 5regParam = 0.01alpha = 2, RMSE = 10.017
+rank = 5regParam = 0.01alpha = 3, RMSE = 10.012
+rank = 5regParam = 0.01alpha = 4, RMSE = 10.007
+rank = 5regParam = 0.01alpha = 5, RMSE = 10.004
+rank = 5regParam = 0.01alpha = 10, RMSE = 9.991
+rank = 5regParam = 0.01alpha = 15, RMSE = 9.982
+rank = 5regParam = 0.01alpha = 20, RMSE = 9.976
+rank = 5regParam = 0.1alpha = 1, RMSE = 10.023
+rank = 5regParam = 0.1alpha = 2, RMSE = 10.017
+rank = 5regParam = 0.1alpha = 3, RMSE = 10.012
+rank = 5regParam = 0.1alpha = 4, RMSE = 10.008
+rank = 5regParam = 0.1alpha = 5, RMSE = 10.004
+rank = 5regParam = 0.1alpha = 10, RMSE = 9.991
+rank = 5regParam = 0.1alpha = 15, RMSE = 9.983
+rank = 5regParam = 0.1alpha = 20, RMSE = 9.976
+rank = 5regParam = 1alpha = 1, RMSE = 10.026
+rank = 5regParam = 1alpha = 2, RMSE = 10.019
+rank = 5regParam = 1alpha = 3, RMSE = 10.014
+rank = 5regParam = 1alpha = 4, RMSE = 10.009
+rank = 5regParam = 1alpha = 5, RMSE = 10.006
+rank = 5regParam = 1alpha = 10, RMSE = 9.992
+rank = 5regParam = 1alpha = 15, RMSE = 9.983
+rank = 5regParam = 1alpha = 20, RMSE = 9.977
+rank = 5regParam = 10alpha = 1, RMSE = 10.037
+rank = 5regParam = 10alpha = 2, RMSE = 10.037
+rank = 5regParam = 10alpha = 3, RMSE = 10.032
+rank = 5regParam = 10alpha = 4, RMSE = 10.028
+rank = 5regParam = 10alpha = 5, RMSE = 10.023
+rank = 5regParam = 10alpha = 10, RMSE = 10.005
+rank = 5regParam = 10alpha = 15, RMSE = 9.993
+rank = 5regParam = 10alpha = 20, RMSE = 9.984
+rank = 10regParam = 0.01alpha = 1, RMSE = 10.021
+rank = 10regParam = 0.01alpha = 2, RMSE = 10.013
+rank = 10regParam = 0.01alpha = 3, RMSE = 10.006
+rank = 10regParam = 0.01alpha = 4, RMSE = 10.001
+rank = 10regParam = 0.01alpha = 5, RMSE = 9.997
+rank = 10regParam = 0.01alpha = 10, RMSE = 9.984
+rank = 10regParam = 0.01alpha = 15, RMSE = 9.976
+rank = 10regParam = 0.01alpha = 20, RMSE = 9.969
+rank = 10regParam = 0.1alpha = 1, RMSE = 10.02
+rank = 10regParam = 0.1alpha = 2, RMSE = 10.012
+rank = 10regParam = 0.1alpha = 3, RMSE = 10.006
+rank = 10regParam = 0.1alpha = 4, RMSE = 10.002
+rank = 10regParam = 0.1alpha = 5, RMSE = 9.997
+rank = 10regParam = 0.1alpha = 10, RMSE = 9.984
+rank = 10regParam = 0.1alpha = 15, RMSE = 9.976
+rank = 10regParam = 0.1alpha = 20, RMSE = 9.969
+rank = 10regParam = 1alpha = 1, RMSE = 10.024
+rank = 10regParam = 1alpha = 2, RMSE = 10.016
+rank = 10regParam = 1alpha = 3, RMSE = 10.009
+rank = 10regParam = 1alpha = 4, RMSE = 10.004
+rank = 10regParam = 1alpha = 5, RMSE = 10.0
+rank = 10regParam = 1alpha = 10, RMSE = 9.985
+rank = 10regParam = 1alpha = 15, RMSE = 9.976
+rank = 10regParam = 1alpha = 20, RMSE = 9.97
+rank = 10regParam = 10alpha = 1, RMSE = 10.037
+rank = 10regParam = 10alpha = 2, RMSE = 10.037
+rank = 10regParam = 10alpha = 3, RMSE = 10.032
+rank = 10regParam = 10alpha = 4, RMSE = 10.027
+rank = 10regParam = 10alpha = 5, RMSE = 10.022
+rank = 10regParam = 10alpha = 10, RMSE = 10.002
+rank = 10regParam = 10alpha = 15, RMSE = 9.988
+rank = 10regParam = 10alpha = 20, RMSE = 9.979
+rank = 15regParam = 0.01alpha = 1, RMSE = 10.02
+rank = 15regParam = 0.01alpha = 2, RMSE = 10.013
+rank = 15regParam = 0.01alpha = 3, RMSE = 10.008
+rank = 15regParam = 0.01alpha = 4, RMSE = 10.004
+rank = 15regParam = 0.01alpha = 5, RMSE = 10.0
+rank = 15regParam = 0.01alpha = 10, RMSE = 9.985
+rank = 15regParam = 0.01alpha = 15, RMSE = 9.975
+rank = 15regParam = 0.01alpha = 20, RMSE = 9.967
+rank = 15regParam = 0.1alpha = 1, RMSE = 10.02
+rank = 15regParam = 0.1alpha = 2, RMSE = 10.014
+rank = 15regParam = 0.1alpha = 3, RMSE = 10.008
+rank = 15regParam = 0.1alpha = 4, RMSE = 10.003
+rank = 15regParam = 0.1alpha = 5, RMSE = 9.999
+rank = 15regParam = 0.1alpha = 10, RMSE = 9.985
+rank = 15regParam = 0.1alpha = 15, RMSE = 9.975
+rank = 15regParam = 0.1alpha = 20, RMSE = 9.967
+rank = 15regParam = 1alpha = 1, RMSE = 10.024
+rank = 15regParam = 1alpha = 2, RMSE = 10.015
+rank = 15regParam = 1alpha = 3, RMSE = 10.009
+rank = 15regParam = 1alpha = 4, RMSE = 10.004
+rank = 15regParam = 1alpha = 5, RMSE = 10.0
+rank = 15regParam = 1alpha = 10, RMSE = 9.985
+rank = 15regParam = 1alpha = 15, RMSE = 9.975
+rank = 15regParam = 1alpha = 20, RMSE = 9.967
+rank = 15regParam = 10alpha = 1, RMSE = 10.037
+rank = 15regParam = 10alpha = 2, RMSE = 10.037
+rank = 15regParam = 10alpha = 3, RMSE = 10.032
+rank = 15regParam = 10alpha = 4, RMSE = 10.027
+rank = 15regParam = 10alpha = 5, RMSE = 10.021
+rank = 15regParam = 10alpha = 10, RMSE = 10.0
+rank = 15regParam = 10alpha = 15, RMSE = 9.986
+rank = 15regParam = 10alpha = 20, RMSE = 9.976
+rank = 20regParam = 0.01alpha = 1, RMSE = 10.018
+rank = 20regParam = 0.01alpha = 2, RMSE = 10.01
+rank = 20regParam = 0.01alpha = 3, RMSE = 10.004
+rank = 20regParam = 0.01alpha = 4, RMSE = 9.999
+rank = 20regParam = 0.01alpha = 5, RMSE = 9.995
+rank = 20regParam = 0.01alpha = 10, RMSE = 9.981
+rank = 20regParam = 0.01alpha = 15, RMSE = 9.971
+rank = 20regParam = 0.01alpha = 20, RMSE = 9.963
+rank = 20regParam = 0.1alpha = 1, RMSE = 10.017
+rank = 20regParam = 0.1alpha = 2, RMSE = 10.011
+rank = 20regParam = 0.1alpha = 3, RMSE = 10.005
+rank = 20regParam = 0.1alpha = 4, RMSE = 10.0
+rank = 20regParam = 0.1alpha = 5, RMSE = 9.996
+rank = 20regParam = 0.1alpha = 10, RMSE = 9.98
+rank = 20regParam = 0.1alpha = 15, RMSE = 9.971
+rank = 20regParam = 0.1alpha = 20, RMSE = 9.963
+rank = 20regParam = 1alpha = 1, RMSE = 10.023
+rank = 20regParam = 1alpha = 2, RMSE = 10.013
+rank = 20regParam = 1alpha = 3, RMSE = 10.007
+rank = 20regParam = 1alpha = 4, RMSE = 10.001
+rank = 20regParam = 1alpha = 5, RMSE = 9.997
+rank = 20regParam = 1alpha = 10, RMSE = 9.981
+rank = 20regParam = 1alpha = 15, RMSE = 9.971
+rank = 20regParam = 1alpha = 20, RMSE = 9.963
+rank = 20regParam = 10alpha = 1, RMSE = 10.037
+rank = 20regParam = 10alpha = 2, RMSE = 10.037
+rank = 20regParam = 10alpha = 3, RMSE = 10.032
+rank = 20regParam = 10alpha = 4, RMSE = 10.027
+rank = 20regParam = 10alpha = 5, RMSE = 10.021
+rank = 20regParam = 10alpha = 10, RMSE = 10.0
+rank = 20regParam = 10alpha = 15, RMSE = 9.985
+rank = 20regParam = 10alpha = 20, RMSE = 9.974
+rank = 25regParam = 0.01alpha = 1, RMSE = 10.016
+rank = 25regParam = 0.01alpha = 2, RMSE = 10.008
+rank = 25regParam = 0.01alpha = 3, RMSE = 10.002
+rank = 25regParam = 0.01alpha = 4, RMSE = 9.998
+rank = 25regParam = 0.01alpha = 5, RMSE = 9.994
+rank = 25regParam = 0.01alpha = 10, RMSE = 9.981
+rank = 25regParam = 0.01alpha = 15, RMSE = 9.971
+rank = 25regParam = 0.01alpha = 20, RMSE = 9.963
+rank = 25regParam = 0.1alpha = 1, RMSE = 10.016
+rank = 25regParam = 0.1alpha = 2, RMSE = 10.008
+rank = 25regParam = 0.1alpha = 3, RMSE = 10.002
+rank = 25regParam = 0.1alpha = 4, RMSE = 9.998
+rank = 25regParam = 0.1alpha = 5, RMSE = 9.994
+rank = 25regParam = 0.1alpha = 10, RMSE = 9.981
+rank = 25regParam = 0.1alpha = 15, RMSE = 9.971
+rank = 25regParam = 0.1alpha = 20, RMSE = 9.963
+rank = 25regParam = 1alpha = 1, RMSE = 10.022
+rank = 25regParam = 1alpha = 2, RMSE = 10.012
+rank = 25regParam = 1alpha = 3, RMSE = 10.005
+rank = 25regParam = 1alpha = 4, RMSE = 9.999
+rank = 25regParam = 1alpha = 5, RMSE = 9.995
+rank = 25regParam = 1alpha = 10, RMSE = 9.98
+rank = 25regParam = 1alpha = 15, RMSE = 9.97
+rank = 25regParam = 1alpha = 20, RMSE = 9.962
+rank = 25regParam = 10alpha = 1, RMSE = 10.037
+rank = 25regParam = 10alpha = 2, RMSE = 10.037
+rank = 25regParam = 10alpha = 3, RMSE = 10.032
+rank = 25regParam = 10alpha = 4, RMSE = 10.026
+rank = 25regParam = 10alpha = 5, RMSE = 10.02
+rank = 25regParam = 10alpha = 10, RMSE = 9.998
+rank = 25regParam = 10alpha = 15, RMSE = 9.984
+rank = 25regParam = 10alpha = 20, RMSE = 9.973
+rank = 30regParam = 0.01alpha = 1, RMSE = 10.017
+rank = 30regParam = 0.01alpha = 2, RMSE = 10.009
+rank = 30regParam = 0.01alpha = 3, RMSE = 10.002
+rank = 30regParam = 0.01alpha = 4, RMSE = 9.997
+rank = 30regParam = 0.01alpha = 5, RMSE = 9.993
+rank = 30regParam = 0.01alpha = 10, RMSE = 9.978
+rank = 30regParam = 0.01alpha = 15, RMSE = 9.969
+rank = 30regParam = 0.01alpha = 20, RMSE = 9.961
+rank = 30regParam = 0.1alpha = 1, RMSE = 10.017
+rank = 30regParam = 0.1alpha = 2, RMSE = 10.009
+rank = 30regParam = 0.1alpha = 3, RMSE = 10.003
+19/05/01 07:43:08 WARN DFSClient: DFSOutputStream ResponseProcessor exception  for block BP-1256044058-128.122.215.50-1440607644284:blk_1132477468_58825259
+java.io.IOException: Bad response ERROR for block BP-1256044058-128.122.215.50-1440607644284:blk_1132477468_58825259 from datanode 10.0.255.234:50010
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer$ResponseProcessor.run(DFSOutputStream.java:896)
+19/05/01 07:43:08 WARN DFSClient: Error Recovery for block BP-1256044058-128.122.215.50-1440607644284:blk_1132477468_58825259 in pipeline 10.0.255.224:50010, 10.0.255.213:50010, 10.0.255.234:50010: bad datanode 10.0.255.234:50010
+rank = 30regParam = 0.1alpha = 4, RMSE = 9.998
+rank = 30regParam = 0.1alpha = 5, RMSE = 9.993
+rank = 30regParam = 0.1alpha = 10, RMSE = 9.978
+rank = 30regParam = 0.1alpha = 15, RMSE = 9.969
+rank = 30regParam = 0.1alpha = 20, RMSE = 9.961
+rank = 30regParam = 1alpha = 1, RMSE = 10.022
+rank = 30regParam = 1alpha = 2, RMSE = 10.013
+rank = 30regParam = 1alpha = 3, RMSE = 10.006
+rank = 30regParam = 1alpha = 4, RMSE = 10.0
+rank = 30regParam = 1alpha = 5, RMSE = 9.996
+rank = 30regParam = 1alpha = 10, RMSE = 9.979
+rank = 30regParam = 1alpha = 15, RMSE = 9.969
+rank = 30regParam = 1alpha = 20, RMSE = 9.961
+rank = 30regParam = 10alpha = 1, RMSE = 10.037
+rank = 30regParam = 10alpha = 2, RMSE = 10.036
+rank = 30regParam = 10alpha = 3, RMSE = 10.032
+rank = 30regParam = 10alpha = 4, RMSE = 10.026
+rank = 30regParam = 10alpha = 5, RMSE = 10.021
+rank = 30regParam = 10alpha = 10, RMSE = 9.998
+rank = 30regParam = 10alpha = 15, RMSE = 9.983
+rank = 30regParam = 10alpha = 20, RMSE = 9.972
+64217.30779027939
