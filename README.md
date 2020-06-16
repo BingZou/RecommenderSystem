@@ -1,8 +1,4 @@
-# DSGA1004 - BIG DATA
-
-# Overview
-
-Build and evaluate a recommender system. 
+## Build and evaluate a recommender system. 
 
 ## The data set
 
